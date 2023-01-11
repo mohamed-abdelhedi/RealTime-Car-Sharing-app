@@ -98,6 +98,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     topLeft: Radius.circular(0),
                                     topRight: Radius.circular(0),
                                   ),
+                                  child: Image.network(
+                                    'https://blog.autoslash.com/wp-content/uploads/2022/09/First_Time_Rental-1024x576.jpg',
+                                    width: double.infinity,
+                                    height: MediaQuery.of(context).size.height *
+                                        0.3788,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ],

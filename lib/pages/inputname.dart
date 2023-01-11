@@ -82,7 +82,8 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                       Align(
                         alignment: AlignmentDirectional(-0.5, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 143, 0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(0, 10, 143, 0),
                           child: SelectionArea(
                               child: Text(
                             'what is your name?',
@@ -95,10 +96,10 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
+                        alignment: AlignmentDirectional(0, 0),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(50, 25, 146, 0),
+                              EdgeInsetsDirectional.fromSTEB(31, 25, 146, 0),
                           child: TextFormField(
                             controller: nameController1,
                             obscureText: false,
@@ -109,40 +110,6 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                                 borderSide: BorderSide(
                                   color: Color(0xFF4048BF),
                                   width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0xFF4048BF),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              errorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0x00000000),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              focusedErrorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0x00000000),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
                                 ),
                               ),
                             ),
@@ -157,10 +124,10 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.5, 0),
+                        alignment: AlignmentDirectional(-0.3, 0),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(0, 25, 143, 0),
+                              EdgeInsetsDirectional.fromSTEB(0, 40, 143, 0),
                           child: SelectionArea(
                               child: Text(
                             'what is your last name?',
@@ -173,10 +140,10 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 0.05),
+                        alignment: AlignmentDirectional(0, 0),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(50, 25, 146, 0),
+                              EdgeInsetsDirectional.fromSTEB(31, 15, 146, 0),
                           child: TextFormField(
                             controller: nameController2,
                             obscureText: false,
@@ -187,40 +154,6 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                                 borderSide: BorderSide(
                                   color: Color(0xFF4048BF),
                                   width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0xFF4048BF),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              errorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0x00000000),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              focusedErrorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0x00000000),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
                                 ),
                               ),
                             ),
@@ -235,7 +168,7 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.65, 0),
+                        alignment: AlignmentDirectional(-0.75, 0),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 45, 0, 0),
                           child: SelectionArea(
@@ -250,7 +183,7 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(50, 20, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(31, 20, 0, 0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -297,7 +230,7 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(50, 20, 20, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(31, 50, 20, 0),
                         child: SelectionArea(
                             child: Text(
                           'By clicking Let’s Get Started you agree privacy policy, terms of services, community guidelines.',
@@ -338,7 +271,7 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                           text: 'Let\'s Get Started',
                           options: FFButtonOptions(
                             width: 315,
-                            height: 56,
+                            height: MediaQuery.of(context).size.height * 0.08,
                             color: Color(0xFF514BC3),
                             textStyle:
                                 FlutterFlowTheme.of(context).subtitle2.override(

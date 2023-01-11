@@ -49,7 +49,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     Align(
                       alignment: AlignmentDirectional(-0.6, 0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(31, 41, 153, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(50, 41, 100, 0),
                         child: SelectionArea(
                             child: Text(
                           'Enter your phone number',
@@ -73,7 +73,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                               alignment: AlignmentDirectional(-0.6, 0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    45, 196, 0, 0),
+                                    45, 106, 0, 0),
                                 child: Container(
                                   width:
                                       MediaQuery.of(context).size.width * 0.15,
@@ -89,40 +89,6 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                         borderSide: BorderSide(
                                           color: Color(0xFF4048BF),
                                           width: 1,
-                                        ),
-                                        borderRadius: const BorderRadius.only(
-                                          topLeft: Radius.circular(4.0),
-                                          topRight: Radius.circular(4.0),
-                                        ),
-                                      ),
-                                      focusedBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0xFF4048BF),
-                                          width: 1,
-                                        ),
-                                        borderRadius: const BorderRadius.only(
-                                          topLeft: Radius.circular(4.0),
-                                          topRight: Radius.circular(4.0),
-                                        ),
-                                      ),
-                                      errorBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1,
-                                        ),
-                                        borderRadius: const BorderRadius.only(
-                                          topLeft: Radius.circular(4.0),
-                                          topRight: Radius.circular(4.0),
-                                        ),
-                                      ),
-                                      focusedErrorBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1,
-                                        ),
-                                        borderRadius: const BorderRadius.only(
-                                          topLeft: Radius.circular(4.0),
-                                          topRight: Radius.circular(4.0),
                                         ),
                                       ),
                                     ),
@@ -144,59 +110,16 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                               alignment: AlignmentDirectional(-0.1, 0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0, 196, 80, 0),
+                                    0, 106, 80, 0),
                                 child: TextFormField(
                                   controller: textController2,
                                   autofocus: true,
                                   obscureText: false,
                                   decoration: InputDecoration(
-                                    hintText: '12345678',
                                     enabledBorder: UnderlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0xFF4048BF),
                                         width: 1,
-                                      ),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(15),
-                                        bottomRight: Radius.circular(0),
-                                        topLeft: Radius.circular(0),
-                                        topRight: Radius.circular(0),
-                                      ),
-                                    ),
-                                    focusedBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFF4048BF),
-                                        width: 1,
-                                      ),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(15),
-                                        bottomRight: Radius.circular(0),
-                                        topLeft: Radius.circular(0),
-                                        topRight: Radius.circular(0),
-                                      ),
-                                    ),
-                                    errorBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0x00000000),
-                                        width: 1,
-                                      ),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(15),
-                                        bottomRight: Radius.circular(0),
-                                        topLeft: Radius.circular(0),
-                                        topRight: Radius.circular(0),
-                                      ),
-                                    ),
-                                    focusedErrorBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0x00000000),
-                                        width: 1,
-                                      ),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(15),
-                                        bottomRight: Radius.circular(0),
-                                        topLeft: Radius.circular(0),
-                                        topRight: Radius.circular(0),
                                       ),
                                     ),
                                     filled: true,
@@ -221,7 +144,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 300, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
                       child: FFButtonWidget(
                         onPressed: () {
                           if (textController2 != null) {

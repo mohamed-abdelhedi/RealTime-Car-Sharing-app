@@ -62,10 +62,10 @@ class _SignInWidgetState extends State<SignInWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-0.6, 0),
+                        alignment: AlignmentDirectional(-0.75, 0),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(3, 75, 153, 0),
+                              EdgeInsetsDirectional.fromSTEB(20, 75, 153, 0),
                           child: SelectionArea(
                               child: Text(
                             'Enter your e-mail',
@@ -79,7 +79,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(31, 25, 146, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(31, 25, 153, 0),
                         child: TextFormField(
                           controller: textController1,
                           autofocus: true,
@@ -91,40 +91,6 @@ class _SignInWidgetState extends State<SignInWidget> {
                               borderSide: BorderSide(
                                 color: Color(0xFF4048BF),
                                 width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0xFF4048BF),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            errorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            focusedErrorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
                               ),
                             ),
                           ),
@@ -166,40 +132,6 @@ class _SignInWidgetState extends State<SignInWidget> {
                                 color: Color(0xFF4048BF),
                                 width: 1,
                               ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0xFF4048BF),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            errorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            focusedErrorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
                             ),
                             suffixIcon: InkWell(
                               onTap: () => setState(
@@ -225,7 +157,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                       Align(
                         alignment: AlignmentDirectional(-0.75, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 22, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(12, 22, 0, 0),
                           child: GestureDetector(
                               onTap: () {
                                 Navigator.push(
@@ -242,7 +174,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                         fontFamily: 'Poppins',
                                         fontSize: 15,
                                         decoration: TextDecoration.underline,
-                                        color: Colors.white),
+                                        color: Color(0xFF4048BF)),
                               )),
                         ),
                       ),

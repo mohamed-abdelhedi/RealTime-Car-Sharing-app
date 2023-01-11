@@ -55,7 +55,6 @@ class _InputPwdWidgetState extends State<InputPwdWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-0.6, 0),
                         child: Padding(
                           padding:
                               EdgeInsetsDirectional.fromSTEB(3, 75, 153, 0),
@@ -72,8 +71,7 @@ class _InputPwdWidgetState extends State<InputPwdWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(31, 150, 146, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(31, 75, 146, 0),
                         child: TextFormField(
                           controller: textController,
                           autofocus: true,
@@ -85,40 +83,6 @@ class _InputPwdWidgetState extends State<InputPwdWidget> {
                               borderSide: BorderSide(
                                 color: Color(0xFF4048BF),
                                 width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0xFF4048BF),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            errorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
-                              ),
-                            ),
-                            focusedErrorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 1,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(4.0),
-                                topRight: Radius.circular(4.0),
                               ),
                             ),
                             suffixIcon: InkWell(
@@ -144,7 +108,7 @@ class _InputPwdWidgetState extends State<InputPwdWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 300, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
                         child: FFButtonWidget(
                           onPressed: () {
                             if (textController != null) {
@@ -158,7 +122,7 @@ class _InputPwdWidgetState extends State<InputPwdWidget> {
                           text: 'Accept and Continue',
                           options: FFButtonOptions(
                             width: 315,
-                            height: 56,
+                            height: MediaQuery.of(context).size.height * 0.08,
                             color: Color(0xFF514BC3),
                             textStyle:
                                 FlutterFlowTheme.of(context).subtitle2.override(

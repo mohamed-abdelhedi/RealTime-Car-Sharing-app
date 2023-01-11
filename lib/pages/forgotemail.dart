@@ -79,10 +79,10 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-0.6, 0),
+                        alignment: AlignmentDirectional(0, 0),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(3, 75, 153, 0),
+                              EdgeInsetsDirectional.fromSTEB(0, 75, 153, 0),
                           child: SelectionArea(
                               child: Text(
                             'Enter your e-mail',
@@ -99,7 +99,7 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
                         alignment: AlignmentDirectional(0.05, 0),
                         child: Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(40, 25, 146, 0),
+                              EdgeInsetsDirectional.fromSTEB(50, 25, 100, 0),
                           child: TextFormField(
                             controller: textController,
                             autofocus: true,
@@ -111,40 +111,6 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
                                 borderSide: BorderSide(
                                   color: Color(0xFF4048BF),
                                   width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0xFF4048BF),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              errorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0x00000000),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
-                                ),
-                              ),
-                              focusedErrorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Color(0x00000000),
-                                  width: 1,
-                                ),
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(4.0),
-                                  topRight: Radius.circular(4.0),
                                 ),
                               ),
                             ),
@@ -158,7 +124,7 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 300, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
                         child: FFButtonWidget(
                           onPressed: () {
                             passswordReset(textController!.text);
@@ -166,7 +132,7 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
                           text: 'send code',
                           options: FFButtonOptions(
                             width: 315,
-                            height: 56,
+                            height: MediaQuery.of(context).size.height * 0.08,
                             color: Color(0xFF514BC3),
                             textStyle:
                                 FlutterFlowTheme.of(context).subtitle2.override(
