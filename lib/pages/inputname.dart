@@ -300,8 +300,13 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(50, 20, 20, 0),
                         child: SelectionArea(
                             child: Text(
-                          'By clicking Let’s Get Started you agree privacy policy, terms of services, community guidelines',
-                          style: FlutterFlowTheme.of(context).bodyText1,
+                          'By clicking Let’s Get Started you agree privacy policy, terms of services, community guidelines.',
+                          style:
+                              FlutterFlowTheme.of(context).bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                  ),
                         )),
                       ),
                       Padding(

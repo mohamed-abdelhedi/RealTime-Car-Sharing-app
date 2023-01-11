@@ -1,4 +1,4 @@
-import 'package:flutter_application_1/pages/verifEmail2.dart';
+import 'package:flutter_application_1/pages/sign-in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_application_1/service/flutterfire.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
@@ -29,6 +29,32 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
   void dispose() {
     textController?.dispose();
     super.dispose();
+  }
+
+  void forgetPassword(String email) {
+    FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+  }
+
+  Future passswordReset(String email) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              content: Text('Password reset link sent! Check your email'),
+            );
+          });
+    } on FirebaseAuthException catch (e) {
+      print(e);
+      showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              content: Text(e.message.toString()),
+            );
+          });
+    }
   }
 
   @override
@@ -135,11 +161,7 @@ class _ForgotemailpasswordWidgetState extends State<ForgotemailpasswordWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 300, 0, 0),
                         child: FFButtonWidget(
                           onPressed: () {
-                            //auth.sendPasswordResetEmail(email: email);
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => VerifemailWidget()));
+                            passswordReset(textController!.text);
                           },
                           text: 'send code',
                           options: FFButtonOptions(

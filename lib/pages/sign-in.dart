@@ -2,8 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_application_1/pages/choice.dart';
 import 'package:flutter_application_1/pages/inputemail.dart';
 import 'package:flutter_application_1/pages/inputname.dart';
-import 'package:flutter_application_1/pages/VerifEmail1.dart';
+import 'package:flutter_application_1/pages/forgotemail.dart';
 import 'package:flutter_application_1/service/flutterfire.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/flutter_flow_widgets.dart';
@@ -251,8 +252,12 @@ class _SignInWidgetState extends State<SignInWidget> {
                           text: 'Sign-in',
                           onPressed: () {
                             signIn(textController1!.text, textController2!.text)
-                                .then((value) {
+                                .then((value) async {
                               if (value == "success") {
+                                SharedPreferences preferences =
+                                    await SharedPreferences.getInstance();
+                                preferences.setString(
+                                    'email', textController1!.text);
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(

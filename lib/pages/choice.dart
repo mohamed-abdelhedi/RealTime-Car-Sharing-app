@@ -1,3 +1,5 @@
+import 'package:shared_preferences/shared_preferences.dart';
+
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/flutter_flow_widgets.dart';
@@ -13,6 +15,10 @@ class ChosingWidget extends StatefulWidget {
 
 class _ChosingWidgetState extends State<ChosingWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
+  String email = "";
+  Future getEmail() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+  }
 
   @override
   Widget build(BuildContext context) {
