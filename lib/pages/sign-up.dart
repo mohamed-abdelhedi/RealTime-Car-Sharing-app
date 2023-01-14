@@ -35,7 +35,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFF0D1724),
+      backgroundColor: Color.fromRGBO(13, 23, 36, 1),
       body: SingleChildScrollView(
         child: SafeArea(
           child: GestureDetector(
@@ -146,7 +146,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
                       child: FFButtonWidget(
-                        onPressed: () {
+                        onPressed: () async {
                           if (textController2 != null) {
                             SignUpWidget.phoneNumber =
                                 textController1!.text + textController2!.text;
