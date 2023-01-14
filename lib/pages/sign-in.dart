@@ -205,7 +205,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                           },
                           options: FFButtonOptions(
                             width: 315,
-                            height: 56,
+                            height: MediaQuery.of(context).size.height * 0.08,
                             color: Color(0xFF514BC3),
                             textStyle:
                                 FlutterFlowTheme.of(context).subtitle2.override(

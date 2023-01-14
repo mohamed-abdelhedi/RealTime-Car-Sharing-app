@@ -7,50 +7,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:429767584290:android:88ef4041452761467c387b",
-        "android_client_info": {
-          "package_name": "com.mycompany.realtimecar"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "429767584290-mh8f24lu3mpkmt7ug1p0nscco4hdf9k6.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.mycompany.realtimecar",
-            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
-          }
-        },
-        {
-          "client_id": "429767584290-8ru97q1othqr3ev6qq615diri2i2s25r.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCUKSIwrpC-u0Obadbv0-J_dOvf19hJA78"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "429767584290-8ru97q1othqr3ev6qq615diri2i2s25r.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "429767584290-79qpusmqt1a5obb3i92b2knaqc497a5u.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.mycompany.realtimecar"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:429767584290:android:96c2793896801fdf7c387b",
         "android_client_info": {
           "package_name": "com.project.car_mate"
@@ -58,14 +14,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "429767584290-4h0uh0i79a9rldv4f5v22sc6l80m2lq7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.project.car_mate",
-            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
-          }
-        },
-        {
           "client_id": "429767584290-8ru97q1othqr3ev6qq615diri2i2s25r.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -81,13 +29,6 @@
             {
               "client_id": "429767584290-8ru97q1othqr3ev6qq615diri2i2s25r.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "429767584290-79qpusmqt1a5obb3i92b2knaqc497a5u.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.mycompany.realtimecar"
-              }
             }
           ]
         }

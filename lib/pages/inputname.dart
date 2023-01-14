@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_application_1/pages/choice.dart';
 import 'package:flutter_application_1/pages/inputemail.dart';
 import 'package:flutter_application_1/pages/inputpwd.dart';
@@ -113,6 +115,11 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                                 ),
                               ),
                             ),
+                            validator: (nameController1) {
+                              if (!nameController1!.isNotEmpty) {
+                                return 'please enter valid name';
+                              }
+                            },
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
@@ -157,6 +164,11 @@ class _InputnameWidgetState extends State<InputnameWidget> {
                                 ),
                               ),
                             ),
+                            validator: (nameController2) {
+                              if (!nameController2!.isNotEmpty) {
+                                return 'please enter valid name';
+                              }
+                            },
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',

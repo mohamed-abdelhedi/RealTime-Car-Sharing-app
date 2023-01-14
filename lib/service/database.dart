@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class DatabaseService {
   final String uid;
@@ -14,6 +15,7 @@ class DatabaseService {
     return await usersWithCarCollection.doc(uid).set({
       'PhoneNumber': phoneNumber,
       'email': email,
+      'Token': '',
       'firstName': firstName,
       'lastName': lastName,
       'BirthDate': date
@@ -25,6 +27,7 @@ class DatabaseService {
     return await usersNoCarCollection.doc(uid).set({
       'PhoneNumber': phoneNumber,
       'email': email,
+      'Token': '',
       'firstName': firstName,
       'lastName': lastName,
       'BirthDate': date

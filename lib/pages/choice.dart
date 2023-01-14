@@ -81,6 +81,7 @@ class _ChosingWidgetState extends State<ChosingWidget> {
                               FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     fontSize: 24,
+                                    color: Colors.white,
                                   ),
                         ),
                       ),
