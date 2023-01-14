@@ -1,9 +1,12 @@
+import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_application_1/allscreens/passengerapp/pickdropp2.dart';
+import 'package:flutter_application_1/allscreens/riderapp/pickdropoff2.dart';
 
 class ChosingWidget extends StatefulWidget {
   const ChosingWidget({Key? key}) : super(key: key);
@@ -43,8 +46,15 @@ class _ChosingWidgetState extends State<ChosingWidget> {
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 268, 0, 0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            PermissionStatus locationstatus =
+                                await Permission.location.request();
+                            if (locationstatus == PermissionStatus.granted) {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => pickdrop2()));
+                            }
                           },
                           text: 'Requast a Car',
                           options: FFButtonOptions(
@@ -77,8 +87,15 @@ class _ChosingWidgetState extends State<ChosingWidget> {
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 68, 0, 0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            PermissionStatus locationstatus =
+                                await Permission.location.request();
+                            if (locationstatus == PermissionStatus.granted) {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => MainScreen()));
+                            }
                           },
                           text: 'Share your car',
                           options: FFButtonOptions(
